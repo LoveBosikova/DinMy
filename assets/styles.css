@@ -329,8 +329,6 @@
 
 .cards__card:hover path {
   fill: var(--black-color) !important;
-  stroke: var(--black-color);
-  transition: 0.4s;
 }
 
 svg {
@@ -469,5 +467,71 @@ svg {
   box-shadow: -4px -4px 20px rgba(120, 113, 222, 0.2),
     4px 4px 20px rgba(120, 113, 222, 0.2);
 }
-/* <--          -->*/
-/* <--          -->*/
+/* <--     Блок этапы дрессировки     -->*/
+
+.steps {
+  min-height: 55vh;
+  margin-top: 2em;
+
+  background-image: url("../assets/imgs/Line.png");
+  background-repeat: no-repeat;
+  background-position-y: 29vh;
+  background-position-x: center;
+  background-size: 120%;
+}
+
+.main-header--centered {
+  max-width: 1000px;
+  margin: 1.5em auto 1em auto;
+}
+
+.steps__wrap {
+  max-width: 1000px;
+  min-height: 55vh;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.steps__card {
+  flex: 25% 1 1;
+  min-height: 50%;
+  min-width: 21%;
+  max-width: 23%;
+}
+
+.steps__card--align-self-start {
+  align-self: flex-start;
+}
+
+.steps__card--align-self-end {
+  align-self: center;
+}
+
+.steps__number {
+  font-family: var(--font-seoul-hangang);
+  color: var(--green-color);
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  margin: 0;
+
+  transition: all 0.5s ease;
+}
+.steps__number:hover {
+  color: var(--text-violet);
+}
+
+.steps__text {
+  font-family: var(--font-bills-colombo);
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* <--         -->*/

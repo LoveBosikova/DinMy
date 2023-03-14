@@ -534,4 +534,71 @@ svg {
   line-height: 24px;
 }
 
+/* <--    Форма связи     -->*/
+
+.form {
+  background-color: var(--violet-color);
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 2em;
+}
+
+.form__fieldset,
+.form__acess {
+  min-width: 500px;
+  border: none;
+}
+
+.form__acess {
+  margin: 0.5rem 0;
+  color: var(--main-bg-color);
+}
+
+.form__field {
+  display: block;
+  box-sizing: border-box;
+}
+
+.form__input {
+  display: block;
+  width: 70%;
+  margin: 1em auto;
+  height: 3.2em;
+  overflow: hidden;
+  background: #ffffff;
+
+  border: 1px solid #09035d;
+  border-radius: 4px;
+}
+
+.form__input:focus {
+  border: 2px solid #9fdb3d;
+}
+
+.form__button {
+  display: block;
+  margin-bottom: auto;
+  margin-top: 1em;
+  width: 55%;
+  height: 4.2em;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.form__terms {
+  font-family: var(--font-bills-colombo);
+  color: var(--main-bg-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.form__emphasis {
+  text-decoration: none;
+}
+.form__emphasis:hover {
+  color: var(--green-color);
+}
 /* <--         -->*/

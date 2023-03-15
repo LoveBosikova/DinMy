@@ -490,7 +490,7 @@ svg {
 
   background-image: url("../assets/imgs/Line.png");
   background-repeat: no-repeat;
-  background-position-y: 29vh;
+  background-position-y: 26.5vh;
   background-position-x: center;
   background-size: 120%;
 }
@@ -623,10 +623,150 @@ svg {
   width: 50%;
 }
 
-/* <--         -->*/
+/* <--    Блок "Чему обучу"     -->*/
 
-/* <--         -->*/
+.goals {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4em;
+}
 
-/* <--         -->*/
+.inline {
+  display: inline-block;
+  position: relative;
+}
+
+.goals__line-wrap {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.goals__line {
+  max-width: 78%;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.goals__text {
+  font-family: var(--font-bills-colombo);
+  color: var(--dark-blue);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.goals__text--small {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.goals__text--big {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 40px;
+}
+
+.goals__first-goals {
+  display: flex;
+  align-items: end;
+  font-family: var(--font-bills-colombo);
+  font-style: normal;
+  max-width: 78%;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--blue-color);
+}
+
+.goals__last-goals {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-bills-colombo);
+  font-style: normal;
+  max-width: 70%;
+  margin-left: 21%;
+  margin-right: auto;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--blue-color);
+}
+
+.goals__goal-name {
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 20%;
+}
+
+.goal__goal-name--small {
+  font-size: 15px;
+}
+
+.goals__goal-name--margin-right {
+  margin-right: 27%;
+}
+
+.goals__goal-name--long {
+  margin-right: 5%;
+  min-width: 30%;
+  margin-top: 1em;
+}
+
+/* <--    Блок "Ответы на частые вопросы"     -->*/
+
+.answers {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 4em;
+}
+
+.answers__wrap {
+  max-width: 77%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2em;
+}
+
+.card {
+  border: 1px solid var(--blue-color);
+}
+.card-header {
+  background-color: var(--main-bg-color) !important;
+  border-bottom: 1px solid var(--blue-color);
+}
+
+.answers__question-text {
+  font-family: var(--font-bills-colombo);
+  color: var(--blue-color);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.answers__answer-text {
+  font-family: var(--font-bills-colombo);
+  color: var(--dark-blue);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+/* <--    Footer     -->*/
+
+.footer {
+}
 
 /* <--         -->*/

@@ -810,4 +810,48 @@ svg {
   padding-top: 1em;
 }
 
-/* <--         -->*/
+/* <--    Checkbox     -->*/
+
+.checkbox__label {
+}
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__fake {
+  position: relative;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-color: var(--main-bg-color);
+  border-radius: 4px;
+  margin-bottom: 3px;
+}
+
+.checkbox__fake::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  background-image: url("../assets/imgs/checbox-ok.svg");
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.checkbox__input:checked + .checkbox__fake::before {
+  opacity: 1;
+}
+
+.checkbox__text {
+  display: inline-block;
+  font-family: var(--font-bills-colombo);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  margin-left: 3px;
+}

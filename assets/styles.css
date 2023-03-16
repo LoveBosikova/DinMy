@@ -83,13 +83,16 @@
 }
 .nav {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 
-  width: 80%;
+  max-width: 1218px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 1em;
+  margin-bottom: 0.5em;
+  padding-top: 3em;
+  padding-left: 10px;
 }
 
 .nav__items {
@@ -97,12 +100,14 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 0;
 }
 
 .nav__link {
   text-decoration: none;
   color: var(--text-blue);
   font-family: var(--font-bills-colombo);
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   white-space: nowrap;
@@ -161,7 +166,7 @@
   flex-wrap: nowrap;
   justify-content: center;
 
-  width: 1000px;
+  width: 1218px;
 
   margin-left: auto;
   margin-right: auto;
@@ -171,16 +176,14 @@
 }
 
 .main-board__text-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   flex: 30% 1 1;
-
-  max-width: 30%;
+  min-width: 42%;
 
   border-radius: 20% 0 0 0;
   background-color: var(--main-bg-color);
-
-  padding-left: 5%;
-  padding-right: 6%;
-  margin-right: 0;
 }
 
 .main-board__main-header {
@@ -199,18 +202,24 @@
   color: var(--violet-color);
 }
 
+.main-board__wrap {
+  height: 100%;
+  max-width: 100%;
+  margin-left: 22%;
+  margin-right: 10%;
+  margin-top: 6%;
+}
+
 .main-board__text {
   font-family: var(--font-bills-colombo);
   color: var(--violet-color);
+  padding-top: 1%;
+  margin-bottom: 10%;
 }
 
 .main-board__button {
-  margin-bottom: auto;
-  margin-top: auto;
-  width: 65%;
+  width: 80%;
   height: 14%;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .main-board__photo-side {
@@ -227,35 +236,31 @@
 /* <--     Причины дрессировать собаку     -->*/
 .reasons {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: flex-start;
 
-  max-width: 1000px;
-  margin-top: 2em;
+  max-width: 1218px;
+  margin-top: 8em;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 3em;
 }
 
 .reasons__item {
   box-sizing: border-box;
-  justify-content: center;
-  align-content: center;
 
   display: flex;
   flex-direction: column;
-
-  max-width: 18%;
-  padding-left: 2%;
-  padding-right: 2%;
-
+  justify-content: center;
+  align-content: center;
   text-align: center;
 }
 
 .reasons__header {
   font-family: var(--font-seoul-hangang);
   font-weight: 600;
-  font-size: 26px;
+  font-size: 36px;
   line-height: 36px;
 
   margin-bottom: 0;
@@ -265,10 +270,13 @@
   font-family: var(--font-bills-colombo);
   color: var(--black-color);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 27px;
 
+  max-width: 75%;
   margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* <--     Блок main-header     -->*/
@@ -284,7 +292,8 @@
 /* <--     Блок cards     -->*/
 
 .cards {
-  max-width: 1000px;
+  max-width: 1218px;
+  margin-top: 7em;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2em;
@@ -294,6 +303,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  margin-top: 4em;
 }
 
 .cards__card {
@@ -345,6 +356,7 @@ svg {
   text-align: center;
   padding-left: 0.5em;
   padding-right: 1em;
+  margin-bottom: 0;
 }
 
 /* <--     Секция "С кинологом лучше"     -->*/
@@ -353,6 +365,7 @@ svg {
   background-color: var(--violet-color);
 
   max-width: 100%;
+  margin-top: 4.5em;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 4em;
@@ -362,17 +375,18 @@ svg {
 .better__articles-wrap {
   display: flex;
   justify-content: space-evenly;
-  max-width: 1000px;
+  max-width: 1218px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 1em;
 }
 
 .main-header--white {
   color: var(--main-bg-color);
-  padding-top: 1em;
+  padding-top: 2em;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1000px;
+  max-width: 1218px;
 }
 
 .better__article--long {
@@ -392,6 +406,7 @@ svg {
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
+  margin-top: 1em;
 }
 
 .better__text {
@@ -405,33 +420,34 @@ svg {
 
 /* <--     Секция "Почему я"     -->*/
 .why-me-section {
-  max-width: 1000px;
+  max-width: 1218px;
+  padding-top: 1em;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2em;
 }
+
 .why-me-section__cards-wrap {
   display: flex;
   justify-content: space-between;
   align-content: center;
   align-items: stretch;
   height: max-content;
+
   gap: 25px;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .why-me-section__card {
-  max-width: 25%;
-  min-width: 23%;
+  max-width: 33%;
+  min-width: 30%;
   box-shadow: -4px -4px 20px rgba(120, 113, 222, 0.1),
     4px 4px 20px rgba(120, 113, 222, 0.1);
   border-radius: 4px;
 
   padding: 30px;
   margin-top: 2em;
-}
-
-.why-me-section__card--short {
-  min-height: 45vh;
 }
 
 .why-me-section__header {
@@ -448,20 +464,19 @@ svg {
   font-family: var(--font-bills-colombo);
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 27px;
 
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-
   color: var(--text-violet);
 }
 
 .why-me-section__text {
   font-family: var(--font-bills-colombo);
   font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .why-me-section__emphasis {
@@ -487,25 +502,26 @@ svg {
 
 .steps {
   min-height: 55vh;
-  margin-top: 2em;
+  margin-top: 5.5em;
 
   background-image: url("../assets/imgs/Line.png");
   background-repeat: no-repeat;
-  background-position-y: 26.5vh;
-  background-position-x: center;
+  background-position: 50% 31vh;
   background-size: 120%;
 }
 
 .main-header--centered {
-  max-width: 1000px;
+  max-width: 1218px;
   margin: 1.5em auto 1em auto;
 }
 
 .steps__wrap {
-  max-width: 1000px;
+  max-width: 1218px;
   min-height: 55vh;
+  margin-top: 4em;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 6em;
 
   display: flex;
   flex-direction: row;
@@ -532,7 +548,7 @@ svg {
   font-family: var(--font-seoul-hangang);
   color: var(--green-color);
   font-weight: 600;
-  font-size: 50px;
+  font-size: 60px;
   line-height: 60px;
   margin: 0;
 
@@ -546,26 +562,34 @@ svg {
   font-family: var(--font-bills-colombo);
 
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
+}
+
+.steps__number--bottom {
+  margin-top: 2em;
+}
+
+.steps__text--bottom {
+  margin-top: 2em;
 }
 
 /* <--    Форма связи     -->*/
 
 .form {
   background-color: var(--violet-color);
-  height: 30vh;
+  height: 34.2vh;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  margin-bottom: 3em;
+  margin-bottom: 4.5em;
   margin-top: 3em;
 }
 
 .form__fieldset,
 .form__acess {
-  min-width: 500px;
+  min-width: 609px;
   border: none;
 }
 
@@ -583,7 +607,7 @@ svg {
   display: block;
   width: 70%;
   margin: 1em auto;
-  height: 3.2em;
+  height: 4em;
   overflow: hidden;
   background: #ffffff;
 
@@ -627,10 +651,11 @@ svg {
 /* <--    Блок "Чему обучу"     -->*/
 
 .goals {
-  max-width: 1000px;
+  max-width: 1218px;
+  margin-top: 6.3em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 4em;
+  margin-bottom: 4em;
 }
 
 .inline {
@@ -680,6 +705,7 @@ svg {
   font-family: var(--font-bills-colombo);
   font-style: normal;
   max-width: 78%;
+  margin-top: 2em;
   margin-right: auto;
   margin-left: auto;
 
@@ -727,7 +753,8 @@ svg {
 /* <--    Блок "Ответы на частые вопросы"     -->*/
 
 .answers {
-  max-width: 1000px;
+  max-width: 1218px;
+  margin-top: 6em;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 4em;

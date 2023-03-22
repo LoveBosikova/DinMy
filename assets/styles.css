@@ -75,11 +75,6 @@
 
 /* <--      header навигация      -->*/
 
-img {
-  border-style: none;
-  width: 100%;
-}
-
 .header,
 .footer {
   background-color: var(--light-violet);
@@ -588,11 +583,15 @@ svg {
   background-color: var(--violet-color);
   height: 34.2vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 
   margin-bottom: 4.5em;
   margin-top: 3em;
+}
+
+.form__fieldset {
+  width: 40%;
 }
 
 .form__fieldset,
@@ -601,6 +600,8 @@ svg {
 }
 
 .form__acess {
+  flex-basis: 40%;
+
   margin: 0.5rem 0;
   color: var(--main-bg-color);
 }
@@ -611,7 +612,7 @@ svg {
 
 .form__input {
   display: block;
-  width: 70%;
+  width: 80%;
   margin: 1em auto;
   height: 4em;
   overflow: hidden;
@@ -629,12 +630,20 @@ svg {
   display: block;
   margin-bottom: auto;
   margin-top: 1.1em;
-  width: 100%;
+  width: 60%;
   height: 4.2em;
 
   padding-left: 30px;
   padding-right: 30px;
 }
+
+.test-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .form__terms {
   font-family: var(--font-bills-colombo);
   color: var(--main-bg-color);
@@ -740,6 +749,10 @@ svg {
 
 .goals__goal-name--margin-right {
   margin-right: 27%;
+}
+
+.goals-max486__line--left {
+  width: 97%;
 }
 
 .goals__goal-name--long {
@@ -854,6 +867,21 @@ svg {
 /* <--    Экраны больше 1000px      -->*/
 
 @media (min-width: 1000px) {
+  .nav,
+  .main-board,
+  .reasons,
+  .cards,
+  .better__articles-wrap,
+  .why-me-section,
+  .main-header,
+  .steps__wrap,
+  .goals,
+  .answers {
+    max-width: 1218px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .goals__line--right--max1000 {
     display: none;
   }
@@ -1220,10 +1248,6 @@ svg {
     .steps__card--align-self-end {
       align-self: center;
       padding-top: 2em;
-    }
-
-    .form__input {
-      width: 90%;
     }
 
     .why-me-section__cards-wrap {
